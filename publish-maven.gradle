@@ -1,0 +1,86 @@
+/*apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    //maven { url "https://jitpack.io" }
+}
+
+def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: localMavenRepo)
+            snapshotRepository(url: uri("snapshotRepo"))
+
+            pom.groupId = 'com.shiji.png'
+            pom.artifactId = project.name
+            pom.version = "1.0.0"
+            pom.packaging = 'jar'
+        }
+    }
+}*/
+
+apply plugin: 'maven-publish'
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+    classifier = 'sources'
+}
+
+task javadocJar(type: Jar) {
+    from javadoc
+    classifier = 'javadoc'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifactId = project.name
+            from components.java
+            artifact sourceJar
+            //artifact javadocJar
+            //artifact("$buildDir/outputs/aar/bar-release.aar")
+            pom {
+
+            }
+        }
+        /*dev(MavenPublication) {
+            artifactId = project.name
+            from components.java
+            artifact sourceJar
+            ext.repo = "snapshot"
+        }
+        prod(MavenPublication) {
+            artifactId = project.name
+            from components.java
+            artifact sourceJar
+            ext.repo = "release"
+        }*/
+    }
+    repositories {
+        maven {
+            url = version.endsWith("SNAPSHOT") ? NEXUS_REPO_SNAPSHOTS_URL : NEXUS_REPO_RELEASES_URL
+            credentials {
+                username NEXUS_USERNAME
+                password NEXUS_PASSWORD
+            }
+        }
+        /*maven {
+            name "release"
+            url NEXUS_REPO_RELEASES_URL
+            credentials {
+                username NEXUS_USERNAME
+                password NEXUS_PASSWORD
+            }
+        }
+        maven {
+            name "snapshot"
+            url NEXUS_REPO_SNAPSHOTS_URL
+            credentials {
+                username NEXUS_USERNAME
+                password NEXUS_PASSWORD
+            }
+        }*/
+    }
+}

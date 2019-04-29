@@ -1,0 +1,16 @@
+<manifest package="com.shiji.png.droid.icbc.simulator"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity android:name=".ui.CardPaymentActivity" android:label="Select Payment Method"/>
+        <activity android:name=".ui.BankCardsActivity" android:label="@string/activity_bank_card"/>
+        <activity android:name=".ui.TransResultActivity" android:label="@string/activity_trans_result"/>
+        <activity android:name=".ui.InfoCofirmActivity" android:label="@string/activity_trans_info"/>
+    </application>
+</manifest>

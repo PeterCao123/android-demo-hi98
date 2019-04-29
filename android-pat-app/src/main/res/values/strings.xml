@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name" translatable="false">Shiji Pay@Table</string>
+    <string name="user_id">UserID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="settings">Settings</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="warning_pref_changed">Preferences has been changed, please reload configuration</string>
+    <string name="enter_table_no">Enter Table No.</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="print">Print</string>
+    <string name="total_amount_due">Total Amount Due:</string>
+    <string name="print_check">Print Check</string>
+    <string name="proceed_with_payment">Proceed with Payment</string>
+    <string name="credit_card">CREDIT CARD</string>
+    <string name="debit_card">DEBIT CARD</string>
+    <string name="wechat">WeChat</string>
+    <string name="attracts_surcharge">Attracts a %1$s%% surcharge</string>
+    <string name="no_surcharge_applied">No surcharge applied</string>
+    <string name="pass_device_to_guest">Please pass device to guest after this screen</string>
+    <string name="pay_amount_ngt_total">Pay amount can not greater than total amount</string>
+    <string name="positive_amount_required">Amount must be positive</string>
+    <string name="total_check_amount">Total Check Amount:</string>
+    <string name="surcharge_amount">Surcharge Amount:</string>
+    <string name="tip_amount">Tip Amount:</string>
+    <string name="grand_total">Grand Total:</string>
+    <string name="would_you_like_to_add_a_tip">Would you like to add a tip?</string>
+    <string name="other_amount">Other Amount</string>
+    <string name="other_tip_amount">Other Tip Amount</string>
+    <string name="check_status_changed">Check has been modified or in use by another workstation</string>
+    <string name="print_final_check_message">Transaction completed.\nWould you like to print the final check?</string>
+    <string name="post_result_failed">Post payment failed: %1$s, Retry again?</string>
+    <string name="bank_transaction_failed">Payment failed\nError: %1$s</string>
+    <string name="retry">Retry</string>
+
+    <string name="loading">Loading</string>
+    <string name="testing">Testing</string>
+    <string name="logging">Logging in..</string>
+    <string name="getting_checks">Retrieving Open Checks</string>
+    <string name="preparing_pay">Preparing Pay..</string>
+    <string name="posting_payment">Posting payment to POS..</string>
+
+    <string name="print_head_template">%1$-9s: %2$s</string>
+    <string name="print_text_outlet">Outlet</string>
+    <string name="print_text_table">Table</string>
+    <string name="print_text_employee">Employee</string>
+    <string name="print_text_open_time">Open Time</string>
+    <string name="print_text_close_time">Close Time</string>
+    <string name="print_text_pos_id">Pos Id</string>
+    <string name="print_text_guests">Guests</string>
+
+    <string name="print_text_abn">ABN: %1$s</string>
+    <string name="print_text_tax_invoice">TAX INVOICE</string>
+    <string name="print_item_template">%1$-10s%2$-4s%3$9s%4$9s</string>
+    <string name="print_text_name">Name</string>
+    <string name="print_text_qty">Qty</string>
+    <string name="print_text_price">Price</string>
+    <string name="print_text_amount">Amount</string>
+
+    <string name="print_payment_template">%1$-10s%2$22s</string>
+    <string name="print_summary_template">%1$-23s%2$9s</string>
+    <string name="print_text_payment_surround">[Payment]</string>
+    <string name="print_text_tips">Tips</string>
+    <string name="print_text_surcharge">Surcharge</string>
+    <string name="print_text_service_charge_total">Service Charge Total</string>
+    <string name="print_text_total">Total</string>
+
+    <string name="print_text_payment">Payment</string>
+    <string name="print_text_subtotal">Subtotal</string>
+    <string name="print_text_amount_due">Amount Due</string>
+
+    <string name="print_phone">Phone: %1$s</string>
+    <string name="print_task_failed">Print failed</string>
+    <string name="print_task_in_progress">Printing</string>
+    <string name="print_completed">Print Completed</string>
+    <string name="print_not_ready">Printer is not ready</string>
+
+    <string name="no_valid_checks">No valid checks</string>
+    <string name="select_check_to_pay">Select Check to Pay</string>
+
+    <string name="invalid_merchant_id">Invalid Merchant Id</string>
+    <string name="invalid_revenue_center_id">Invalid Revenue Center Id</string>
+    <string name="invalid_terminal_id">Invalid Terminal Id</string>
+    <string name="invalid_pos_mer_id">Invalid POS Merchant Id</string>
+    <string name="invalid_pos_rvc_id">Invalid POS Revenue Center Id</string>
+    <string name="invalid_api_gateway">Invalid API Gateway</string>
+    <string name="invalid_api_user">Invalid API User</string>
+    <string name="invalid_api_signature">Invalid API Signature</string>
+    <string name="invalid_api_password">Invalid API Password</string>
+    <string name="invalid_user_id">Invalid User Id</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="invalid_currency_message">Invalid currency code</string>
+
+    <string name="pref_enable_surcharge_title">Enable CC Surcharge</string>
+    <string name="pref_surcharge_rate_title">Surcharge Rate</string>
+    <string name="pref_tip_rate_title">Tip Amount Rate</string>
+    <string name="pref_max_tip_amount_title">Max Tip Amount</string>
+    <string name="pref_currency_code_title">Currency Code</string>
+    <string name="pref_receipt_type_title">Receipt Type</string>
+    <string name="pref_mer_id_title">PNG Merchant Id</string>
+    <string name="pref_rvc_id_title">PNG Revenue Center Id</string>
+    <string name="pref_ter_id_title">Terminal Id</string>
+    <string name="pref_pos_mer_id_title">POS Merchant Id</string>
+    <string name="pref_pos_rvc_id_title">POS Revenue Center Id</string>
+    <string name="pref_api_gateway_title">API Gateway</string>
+    <string name="pref_api_user_title">API User</string>
+    <string name="pref_api_bearer_title">API Bearer</string>
+    <string name="pref_api_password_title">API Password</string>
+    <string name="pref_api_connect_timeout_title">Connect Timeout(s)</string>
+    <string name="pref_api_read_timeout_title">Read Timeout(s)</string>
+    <string name="pref_test_connection_title">Test Connection</string>
+    <string name="pref_reload_configuration_title">Reload Configuration</string>
+    <string name="pref_reload_configuration_summary">Last update at %1$s</string>
+    <string name="pref_reload_logo_title">Reload Logo</string>
+    <string name="pref_about_title">About</string>
+
+    <string name="test_confirm_msg">Confirm to test connection?</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="reload_confirm_msg">Confirm to reload?</string>
+    <string name="reload_logo_successful">Reload logo successful</string>
+    <string name="reload_configuration_successful">Reload configuration successful</string>
+
+    <string-array name="pref_receipt_types">
+        <item>APP Receipt</item>
+        <item>POS Format</item>
+        <item>POS PrintLines</item>
+    </string-array>
+</resources>

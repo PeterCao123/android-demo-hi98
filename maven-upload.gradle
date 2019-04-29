@@ -1,0 +1,17 @@
+apply plugin: 'maven'
+
+artifacts {
+    archives sourceJar
+}
+
+def mavenRepo = version.endsWith("SNAPSHOT") ? NEXUS_REPO_SNAPSHOTS_URL : NEXUS_REPO_RELEASES_URL
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: mavenRepo) {
+                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+            }
+        }
+    }
+}

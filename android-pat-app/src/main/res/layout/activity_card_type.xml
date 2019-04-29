@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RootContainer"
+    tools:context=".ui.CardTypeActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/Logo.Small"/>
+
+    <android.support.v7.widget.GridLayout
+        app:rowCount="1"
+        app:columnCount="2"
+        android:layout_marginBottom="@dimen/v_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/total_amount_due"
+            app:layout_columnWeight="4"
+            style="@style/Label" />
+        <EditText
+            android:id="@+id/txt_total_amount"
+            tools:text="123.45"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            app:layout_columnWeight="1"
+            style="@style/Text.End" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btn_credit_card"
+        android:text="@string/credit_card"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        style="@style/Button" />
+    <TextView
+        android:id="@+id/lbl_surcharge"
+        android:text="@string/attracts_surcharge"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/v_space"
+        android:textStyle="italic"
+        style="@style/Label.Smallest"/>
+
+    <Button
+        android:id="@+id/btn_debit_card"
+        android:text="@string/debit_card"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        style="@style/Button" />
+    <TextView
+        android:text="@string/no_surcharge_applied"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/v_space"
+        android:textStyle="italic"
+        style="@style/Label.Smallest"/>
+
+    <Button
+        android:id="@+id/btn_wechat"
+        android:text="@string/wechat"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        style="@style/Button" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="@string/pass_device_to_guest"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textStyle="italic"
+        style="@style/Label.Smallest"/>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:text="Amount"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/font_size_large"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lbl_amt"
+            tools:text="1.00"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:textSize="@dimen/font_size_large"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:text="Card No."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/lbl_card_no"
+            tools:text="439232******3214"
+            android:enabled="true"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:text="Confirm"
+        android:onClick="onClickConfirm"
+        android:enabled="false"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:src="@drawable/ic_swipe_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_key_currency_text">currency_text</string>
+    <string name="pref_key_mer_id">mer_id</string>
+    <string name="pref_key_ter_id">ter_id</string>
+    <string name="pref_key_currency_precision">currency_precision</string>
+    <string name="pref_key_test_mode">test_mode</string>
+    <string name="pref_key_merchant_name">merchant_name</string>
+
+    <string name="pref_currency_text_default">CNY</string>
+    <string name="pref_currency_precision_default">2</string>
+
+    <string name="pref_key_ws_server_url">ws_server_url</string>
+    <string name="pref_key_ws_client_id">ws_client_id</string>
+    <string name="pref_key_ws_secret_key">ws_secret_key</string>
+</resources>

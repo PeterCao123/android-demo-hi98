@@ -1,0 +1,28 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.support = "27.1.1"
+versions.lombok = "1.18.2"
+versions.eventbus = "3.1.1"
+
+def deps = [:]
+deps.lombok = "org.projectlombok:lombok:$versions.lombok"
+deps.eventbus = "org.greenrobot:eventbus:$versions.eventbus"
+
+def support = [:]
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+support.grid_layout = "com.android.support:gridlayout-v7:$versions.support"
+deps.support = support
+
+def build_versions = [:]
+build_versions.min_sdk = 14
+build_versions.target_sdk = 27
+build_versions.compile_sdk = 27
+build_versions.build_tools = "27.0.3"
+ext.build_versions = build_versions
+
+ext.deps = deps

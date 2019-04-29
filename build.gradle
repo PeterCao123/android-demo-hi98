@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "2.6.2"
+    id 'maven-publish'
+}
+
+subprojects {
+    sonarqube {
+        properties {
+            property "sonar.sourceEncoding", "UTF-8"
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        maven {
+            url PNG_MAVEN_REPO
+            credentials {
+                username PNG_MAVEN_USERNAME
+                password PNG_MAVEN_PASSWORD
+            }
+        }
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

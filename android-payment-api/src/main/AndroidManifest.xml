@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shiji.png.droid.payment">
+
+    <application>
+        <activity android:name=".ui.SelectServiceActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/select_payment_service" />
+    </application>
+
+</manifest>

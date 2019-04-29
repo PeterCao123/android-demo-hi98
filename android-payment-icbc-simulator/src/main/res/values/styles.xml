@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Simulator.Fulls"  parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="appalertdialog" parent="Base.V7.Theme.AppCompat.Dialog">
+        <item name="android:colorBackground">@color/color_blue_green</item><!--背景颜色-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

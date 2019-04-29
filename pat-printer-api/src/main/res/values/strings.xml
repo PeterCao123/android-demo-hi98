@@ -1,0 +1,32 @@
+<resources>
+    <string name="print_head_template">%1$-9s: %2$s</string>
+    <string name="print_text_outlet">Outlet</string>
+    <string name="print_text_table">Table</string>
+    <string name="print_text_employee">Employee</string>
+    <string name="print_text_open_time">Open Time</string>
+    <string name="print_text_close_time">Close Time</string>
+    <string name="print_text_pos_id">Pos Id</string>
+    <string name="print_text_guests">Guests</string>
+
+    <string name="print_text_abn">ABN: %1$s</string>
+    <string name="print_text_tax_invoice">TAX INVOICE</string>
+    <string name="print_item_template">%1$-10s%2$-4s%3$9s%4$9s</string>
+    <string name="print_text_name">Name</string>
+    <string name="print_text_qty">Qty</string>
+    <string name="print_text_price">Price</string>
+    <string name="print_text_amount">Amount</string>
+
+    <string name="print_payment_template">%1$-10s%2$22s</string>
+    <string name="print_summary_template">%1$-23s%2$9s</string>
+    <string name="print_text_payment_surround">[Payment]</string>
+    <string name="print_text_tips">Tips</string>
+    <string name="print_text_surcharge">Surcharge</string>
+    <string name="print_text_service_charge_total">Service Charge Total</string>
+    <string name="print_text_total">Total</string>
+
+    <string name="print_text_payment">Payment</string>
+    <string name="print_text_subtotal">Subtotal</string>
+    <string name="print_text_amount_due">Amount Due</string>
+
+    <string name="print_phone">Phone: %1$s</string>
+</resources>

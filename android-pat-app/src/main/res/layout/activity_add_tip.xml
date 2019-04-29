@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RootContainer"
+    tools:context=".ui.AddTipActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/Logo.Small"/>
+
+    <android.support.v7.widget.GridLayout
+        app:rowCount="4"
+        app:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/total_check_amount"
+            app:layout_columnWeight="4"
+            style="@style/Label" />
+        <TextView
+            android:id="@+id/lbl_txn_amt"
+            tools:text="123.45"
+            app:layout_columnWeight="1"
+            style="@style/Text.End" />
+
+        <TextView
+            android:text="@string/surcharge_amount"
+            app:layout_columnWeight="4"
+            style="@style/Label" />
+        <TextView
+            android:id="@+id/lbl_surcharge_amt"
+            tools:text="123.45"
+            app:layout_columnWeight="1"
+            style="@style/Text.End" />
+
+        <TextView
+            android:text="@string/tip_amount"
+            app:layout_columnWeight="4"
+            style="@style/Label" />
+        <TextView
+            android:id="@+id/lbl_tip_amt"
+            tools:text="123.45"
+            app:layout_columnWeight="1"
+            style="@style/Text.End" />
+
+        <TextView
+            android:text="@string/grand_total"
+            app:layout_columnWeight="4"
+            style="@style/Label" />
+        <TextView
+            android:id="@+id/lbl_grand_total"
+            tools:text="123.45"
+            app:layout_columnWeight="1"
+            style="@style/Text.End" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:text="@string/would_you_like_to_add_a_tip"
+        android:layout_marginBottom="@dimen/v_space"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        style="@style/Label.Smallest"/>
+
+    <GridView
+        android:id="@+id/tip_grid"
+        android:numColumns="4"
+        android:descendantFocusability="blocksDescendants"
+        android:verticalSpacing="@dimen/v_space"
+        android:horizontalSpacing="@dimen/h_space"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_other_tip"
+        android:text="@string/other_amount"
+        android:layout_marginBottom="@dimen/v_space"
+        android:layout_width="match_parent"
+        style="@style/Button" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        android:layout_width="match_parent"
+        style="@style/Button" />
+
+</LinearLayout>

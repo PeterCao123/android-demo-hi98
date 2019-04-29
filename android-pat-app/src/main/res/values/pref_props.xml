@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources translatable="false">
+    <string name="pref_key_enable_surcharge">enable_surcharge</string>
+    <string name="pref_key_surcharge_rate">surcharge_rate</string>
+    <string name="pref_key_tip_rate">tip_rate</string>
+    <string name="pref_key_max_tip_amount">max_tip_amount</string>
+    <string name="pref_key_currency_code">currency_code</string>
+    <string name="pref_key_receipt_type">receipt_type</string>
+    <string name="pref_key_mer_id">mer_id</string>
+    <string name="pref_key_rvc_id">rvc_id</string>
+    <string name="pref_key_ter_id">ter_id</string>
+    <string name="pref_key_pos_mer_id">pos_mer_id</string>
+    <string name="pref_key_pos_rvc_id">pos_rvc_id</string>
+    <string name="pref_key_api_gateway">api_gateway</string>
+    <string name="pref_key_api_user">api_user</string>
+    <string name="pref_key_api_bearer">api_bearer</string>
+    <string name="pref_key_api_password">api_password</string>
+    <string name="pref_key_api_connect_timeout">api_connect_timeout</string>
+    <string name="pref_key_api_read_timeout">api_read_timeout</string>
+
+    <string name="pref_key_test_connection">test_connection</string>
+    <string name="pref_key_reload_configuration">reload_configuration</string>
+    <string name="pref_key_reload_logo">reload_logo</string>
+    <string name="pref_key_about">about</string>
+
+    <string name="pref_surcharge_rate_default_value">1.08</string>
+    <string name="pref_tip_rate_default_value">5|10|12.5|15</string>
+    <string name="pref_max_tip_amount_default_value">1000</string>
+    <string name="pref_currency_code_default_value">AUD</string>
+    <string name="pref_receipt_type_default_value">0</string>
+    <string name="pref_api_gateway_default_value">https://png-dev-api-pat-cn01.shijicloud.com/sps-pat/api/V1/</string>
+    <string name="pref_api_connect_timeout_default_value">8</string>
+    <string name="pref_api_read_timeout_default_value">50</string>
+
+    <string-array name="pref_currency_codes">
+        <item>AUD</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="pref_receipt_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

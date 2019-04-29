@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_id">用戶號</string>
+    <string name="password">密碼</string>
+    <string name="login">登錄</string>
+    <string name="settings">設置</string>
+    <string name="confirm_password">確認密碼</string>
+    <string name="warning_pref_changed">系統設置已修改，請更新配置參數</string>
+    <string name="enter_table_no">請輸入桌號</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="print">打印</string>
+    <string name="total_amount_due">訂單金額</string>
+    <string name="print_check">打印小票</string>
+    <string name="proceed_with_payment">付款</string>
+    <string name="credit_card">信用卡</string>
+    <string name="debit_card">借記卡</string>
+    <string name="wechat">微信</string>
+    <string name="attracts_surcharge">附加%1$s%%服務費</string>
+    <string name="no_surcharge_applied">沒有服務費</string>
+    <string name="pass_device_to_guest">請在下一步后向客戶出示設備</string>
+    <string name="pay_amount_ngt_total">付款金額不能大於訂單金額</string>
+    <string name="positive_amount_required">金額必須為正數</string>
+    <string name="total_check_amount">訂單金額</string>
+    <string name="surcharge_amount">服務費</string>
+    <string name="tip_amount">小費</string>
+    <string name="grand_total">總計</string>
+    <string name="would_you_like_to_add_a_tip">是否支付小費？</string>
+    <string name="other_amount">其他小費金額</string>
+    <string name="other_tip_amount">請輸入小費金額</string>
+    <string name="check_status_changed">此訂單已經在其他設備上修改過了</string>
+    <string name="print_final_check_message">交易已完成！\n需要打印回執小票嗎？</string>
+    <string name="post_result_failed">客戶已付款但提交給POS失敗，原因：%1$s，是否重新提交？</string>
+    <string name="bank_transaction_failed">支付失敗\n錯誤碼：%1$s</string>
+    <string name="retry">重試</string>
+
+    <string name="loading">正在加載...</string>
+    <string name="testing">正在測試...</string>
+    <string name="logging">正在登錄...</string>
+    <string name="getting_checks">正在獲取訂單信息...</string>
+    <string name="preparing_pay">準備付款...</string>
+    <string name="posting_payment">正在提交付款結果給POS...</string>
+
+    <string name="print_task_failed">打印失敗</string>
+    <string name="print_task_in_progress">正在打印</string>
+    <string name="print_completed">打印完成</string>
+    <string name="print_not_ready">打印機未就緒</string>
+
+    <string name="no_valid_checks">無效的訂單</string>
+    <string name="select_check_to_pay">請選擇一個訂單</string>
+
+    <string name="invalid_merchant_id">無效的PNG商戶號</string>
+    <string name="invalid_revenue_center_id">無效的PNG營收中心號</string>
+    <string name="invalid_terminal_id">無效的PNG終端號</string>
+    <string name="invalid_pos_mer_id">無效的POS商戶號</string>
+    <string name="invalid_pos_rvc_id">無效的POS營收中心號</string>
+    <string name="invalid_api_gateway">無效的API網關</string>
+    <string name="invalid_api_user">無效的API用戶名</string>
+    <string name="invalid_api_signature">無效的API簽名</string>
+    <string name="invalid_api_password">無效的API密碼</string>
+    <string name="invalid_user_id">無效的用戶號</string>
+    <string name="invalid_password">無效的密碼</string>
+    <string name="invalid_currency_message">無效的貨幣代碼</string>
+
+    <string name="pref_enable_surcharge_title">啟用信用卡服務費</string>
+    <string name="pref_surcharge_rate_title">服務費費率</string>
+    <string name="pref_tip_rate_title">小費費率</string>
+    <string name="pref_max_tip_amount_title">最大小費金額</string>
+    <string name="pref_currency_code_title">貨幣代碼</string>
+    <string name="pref_receipt_type_title">小票類型</string>
+    <string name="pref_mer_id_title">PNG商戶號</string>
+    <string name="pref_rvc_id_title">PNG營收中心號</string>
+    <string name="pref_ter_id_title">PNG終端號</string>
+    <string name="pref_pos_mer_id_title">POS商戶號</string>
+    <string name="pref_pos_rvc_id_title">POS營收中心號</string>
+    <string name="pref_api_gateway_title">API網關</string>
+    <string name="pref_api_user_title">API用戶名</string>
+    <string name="pref_api_bearer_title">API簽名</string>
+    <string name="pref_api_password_title">API密碼</string>
+    <string name="pref_api_connect_timeout_title">連接超時（秒）</string>
+    <string name="pref_api_read_timeout_title">讀超時（秒）</string>
+    <string name="pref_test_connection_title">測試連接</string>
+    <string name="pref_reload_configuration_title">更新配置參數</string>
+    <string name="pref_reload_configuration_summary">最近更新：%1$s</string>
+    <string name="pref_reload_logo_title">更新商戶LOGO</string>
+    <string name="pref_about_title">關於</string>
+
+    <string name="test_confirm_msg">立即開始測試API網絡連接嗎？</string>
+    <string name="connection_successful">連接API網關成功</string>
+    <string name="reload_confirm_msg">立即更新配置參數嗎？</string>
+    <string name="reload_logo_successful">更新商戶LOGO成功</string>
+    <string name="reload_configuration_successful">更新配置參數成功</string>
+</resources>

@@ -1,0 +1,23 @@
+[
+  {
+    "name":"VSDC_TEST_APP2",
+    "id":"A0000000033010",
+    "supportPartialAidSelect":1,
+    "applicationPriority":0,
+    "maximumTargetPercentage":0,
+    "terminalFloorLimit":0,
+    "thresholdValue":0,
+    "terminalActionCodeDenial":"0010000000",
+    "terminalActionCodeOnline":"D84004F800",
+    "terminalActionCodeDefault":"D84000A800",
+    "acquirerIdentifier":"000000123456",
+    "defaultDdol":"9F3704",
+    "defaultTdol":"9F02065F2A029A039C0195059F3704",
+    "applicationVersion":"008D",
+    "terminalRiskManagementData":"",
+    "contactlessReaderMaxTransAmount":0,
+    "contactlessFloorLimit":0,
+    "contactlessCVMAmount":0,
+    "targetPercentage":0
+  }
+]

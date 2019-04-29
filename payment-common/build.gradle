@@ -1,0 +1,25 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    api 'com.shiji.png:png-common:1.0.0-SNAPSHOT'
+    api 'io.reactivex.rxjava2:rxjava:2.2.1'
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'org.slf4j:slf4j-api:1.7.25'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.25'
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+group = 'com.shiji.png'
+version = '1.0.0-SNAPSHOT'
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+    classifier = 'sources'
+}
+
+apply from: '../maven-deploy.gradle'

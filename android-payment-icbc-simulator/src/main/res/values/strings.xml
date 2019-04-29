@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">PaymentSimulator</string>
+
+    <string name="simulator_name">Payment Simulator</string>
+
+    <string name="icbc_simulator_bank_card">Bank Card</string>
+    <string name="icbc_simulator_qr">Bar Code</string>
+    <string name="icbc_simulator_wechat_qr">Wechat</string>
+    <string name="icbc_simulator_alipay_qr">Alipay</string>
+    <string name="icbc_simulator_pay">Pay</string>
+    <string name="simulator_payment">Start the application of payment for receipts</string>
+
+    <string name="simulator_bank_card">Please try IC card / Swing card</string>
+    <string name="simulator_bank_card_start">Start</string>
+
+    <string name="activity_bank_card">Card Payment</string>
+    <string name="activity_trans_result">Trans Result</string>
+    <string name="activity_trans_info">Trans Information</string>
+
+    <string name="loading">Loading</string>
+    <string name="processing">Processing...</string>
+
+    <!--print prompt-->
+    <string name="prompt_take_slip">The receipt has printed,please take it carefully</string>
+    <string name="trans_card_no">Card NO.</string>
+    <string name="type_no">Type</string>
+    <string name="trans_type_no">transType.</string>
+    <string name="batch_id">Batch NO.</string>
+    <string name="date_and_time">Date Time</string>
+    <string name="detail_auth_code">Auth Code</string>
+    <string name="detail_voucher_no">Voucher NO.</string>
+    <string name="detail_amount">Amount</string>
+    <string name="detail_trans_ref_no">Reference NO.</string>
+
+    <string name="qr_code_err">QRCODE ERR</string>
+    <string name="card_err">CARD ERR</string>
+    <string name="qr_code_wechat_pay">"WeChat Pay / 微信支付"</string>
+    <string name="qr_code_ali_pay">"AliPay / 支付宝"</string>
+    <string name="qr_code_union_pay">"UnionPay / 银联二维码"</string>
+
+</resources>

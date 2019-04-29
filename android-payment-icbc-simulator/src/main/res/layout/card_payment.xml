@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/shiji"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="start"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/amount_layout"
+            android:gravity="start"
+            android:text="Amount"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:text="123456789.00" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/payment_pay"
+        android:layout_below="@id/amount_layout"
+        android:layout_marginTop="50dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/bankcard_linearlayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_background_noselect"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_image"
+                android:background="@drawable/icon_bank_card_4" />
+
+            <TextView
+                android:id="@+id/banckcard_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/icbc_simulator_bank_card"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_size_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:id="@+id/line2_trans"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/qr_linearlayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_background_noselect"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/scan_image"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_scan_code_4" />
+
+            <TextView
+                android:id="@+id/qr_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/icbc_simulator_qr"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_size_large"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

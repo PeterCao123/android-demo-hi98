@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="@string/pref_key_enable_surcharge"
+        android:defaultValue="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="@string/pref_enable_surcharge_title"/>
+
+    <EditTextPreference
+        android:key="@string/pref_key_surcharge_rate"
+        android:defaultValue="@string/pref_surcharge_rate_default_value"
+        android:dependency="enable_surcharge"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="@string/pref_surcharge_rate_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_tip_rate"
+        android:defaultValue="@string/pref_tip_rate_default_value"
+        android:inputType="text"
+        android:digits="0123456789.|"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="@string/pref_tip_rate_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_max_tip_amount"
+        android:defaultValue="@string/pref_max_tip_amount_default_value"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="@string/pref_max_tip_amount_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_currency_code"
+        android:defaultValue="@string/pref_currency_code_default_value"
+        android:inputType="textCapCharacters"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_currency_code_title" />
+
+    <ListPreference
+        android:key="@string/pref_key_receipt_type"
+        android:defaultValue="@string/pref_receipt_type_default_value"
+        android:entries="@array/pref_receipt_types"
+        android:entryValues="@array/pref_receipt_type_values"
+        android:negativeButtonText="@null"
+        android:title="@string/pref_receipt_type_title"/>
+
+    <EditTextPreference
+        android:key="@string/pref_key_mer_id"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_mer_id_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_rvc_id"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_rvc_id_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_ter_id"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_ter_id_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_pos_mer_id"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_pos_mer_id_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_pos_rvc_id"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_pos_rvc_id_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_gateway"
+        android:defaultValue="@string/pref_api_gateway_default_value"
+        android:inputType="textUri"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_api_gateway_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_user"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_api_user_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_bearer"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_api_bearer_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_api_password_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_connect_timeout"
+        android:defaultValue="@string/pref_api_connect_timeout_default_value"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:title="@string/pref_api_connect_timeout_title" />
+
+    <EditTextPreference
+        android:key="@string/pref_key_api_read_timeout"
+        android:defaultValue="@string/pref_api_read_timeout_default_value"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:title="@string/pref_api_read_timeout_title" />
+
+    <Preference
+        android:key="@string/pref_key_test_connection"
+        android:title="@string/pref_test_connection_title" />
+
+    <Preference
+        android:key="@string/pref_key_reload_configuration"
+        android:title="@string/pref_reload_configuration_title" />
+
+    <Preference
+        android:key="@string/pref_key_reload_logo"
+        android:title="@string/pref_reload_logo_title" />
+
+    <Preference
+        android:key="@string/pref_key_about"
+        android:title="@string/pref_about_title" />
+
+</PreferenceScreen>

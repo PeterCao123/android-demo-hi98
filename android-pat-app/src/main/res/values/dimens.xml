@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="v_space">8dp</dimen>
+    <dimen name="h_space">8dp</dimen>
+
+    <dimen name="grid_element_margin">14px</dimen>
+    <dimen name="grid_element_padding">14px</dimen>
+
+    <dimen name="grid_column_padding">14px</dimen>
+    <dimen name="grid_edge_margin">23px</dimen>
+
+    <dimen name="grid_element_height">56px</dimen>
+    <dimen name="button_height">96px</dimen>
+
+    <dimen name="text_size_heading">48px</dimen>
+    <dimen name="text_size_large">40px</dimen>
+    <dimen name="text_size_body">36px</dimen>
+    <dimen name="text_size_smallest">24px</dimen>
+
+    <dimen name="grid_column_x1">50px</dimen>
+    <dimen name="grid_column_x2">114px</dimen>
+    <dimen name="grid_column_x3">178px</dimen>
+    <dimen name="grid_column_x4">242px</dimen>
+    <dimen name="grid_column_x6">370px</dimen>
+    <dimen name="grid_column_x8">498px</dimen>
+    <dimen name="grid_column_x12">754px</dimen>
+</resources>

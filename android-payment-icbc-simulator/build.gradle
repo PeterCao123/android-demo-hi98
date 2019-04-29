@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding "UTF-8"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:appcompat-v7:${SUPPORT_LIB_VERSION}"
+    compileOnly "org.projectlombok:lombok:${LOMBOK_VERSION}"
+    annotationProcessor "org.projectlombok:lombok:${LOMBOK_VERSION}"
+    api project(':android-payment-api')
+    implementation project(path: ':android-qrcode-zxing')
+    implementation project(path: ':spat-client')
+}

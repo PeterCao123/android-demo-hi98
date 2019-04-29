@@ -1,0 +1,5 @@
+<resources>
+    <string name="select_payment_service">Select Payment Service</string>
+    <string name="merchant_name">HK Demo Hotel</string>
+    <string name="amount">Amount</string>
+</resources>

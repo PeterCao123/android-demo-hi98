@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">正在加載...</string>
+    <string name="prompt_take_slip">凭条已打印，请妥善保存</string>
+    <string name="trans_card_no">交易卡号</string>
+    <string name="batch_id">批次号</string>
+    <string name="date_and_time">日期/时间</string>
+    <string name="detail_auth_code">授权码</string>
+    <string name="detail_voucher_no">流水号</string>
+    <string name="detail_trans_ref_no">参考号</string>
+
+
+
+
+
+
+
+</resources>

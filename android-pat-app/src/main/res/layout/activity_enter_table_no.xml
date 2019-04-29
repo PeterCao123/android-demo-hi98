@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/RootContainer"
+    tools:context=".ui.EnterTableNoActivity">
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:src="@drawable/ic_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_marginBottom="@dimen/v_space"
+            style="@style/Logo.Normal"/>
+
+        <TextView
+            android:text="@string/enter_table_no"
+            android:layout_width="match_parent"
+            style="@style/Label"/>
+
+        <EditText
+            android:id="@+id/txt_table_no"
+            android:singleLine="true"
+            android:inputType="text"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/v_space"
+            style="@style/Text" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:text="@string/cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                style="@style/Button" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:text="@string/next"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                style="@style/Button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
